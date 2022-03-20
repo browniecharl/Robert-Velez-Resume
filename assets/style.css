@@ -4,14 +4,27 @@
     box-sizing: border-box;
 }
 
-body {
+body{
     background-color: darkgray;
-    font-family: Arial, Helvetica, sans-serif;
-   
+    font-family: Arial, Helvetica, sans-serif;   
 }
- 
 
-header {
+.section-head{
+    font-size: 45px;
+    flex: 1 100%;
+    padding: 20px;
+    text-align: center;
+    max-width: 200px;
+}
+    
+.title{
+    display: flex;
+    flex-direction: row;
+}
+
+/* Header Styling */
+
+header{
     background-image: url("./images/abstract-dark-black-and-grey-modern-material-header-technology-banner-abstract-widescreen-background-vector.jpeg");
     padding: 10px 15px;
     display: flex;
@@ -19,19 +32,18 @@ header {
     flex-wrap: wrap;
     background-size: cover;
     color: lightgray;
-
 }
 
-header h1 {
+header h1{
     font-size: 50px;
     color: lightgray;
 }
 
-header nav {
+header nav{
     margin: 7px 0;
 }
 
-header nav ul {
+header nav ul{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -39,21 +51,22 @@ header nav ul {
     list-style: none;
 }
 
-header nav ul li a {
+header nav ul li a{
     padding: 10px 15px;
     font-size: 2vw;
-    color: lightgray;
-    
+    color: lightgray;    
 }
+
+/* About Me Styling */
 
 #about-me{
     display: flex;
-justify-content: space-between;
-align-items: center;
-margin-bottom: 50px;
-margin-top: 8%;
-margin-left: 5%;
-margin-right: 10%;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+    margin-top: 8%;
+    margin-left: 5%;
+    margin-right: 10%;
 }
 
 #about-me p{
@@ -65,84 +78,26 @@ margin-right: 10%;
     line-height: 1.5;
 }
 
+.avatar{
+    display: flex;
+    flex: 0 25%;
+    max-width: 20%;
+    height: 10%;
+    padding: 10px;
+    border-left: 5px solid darkblue;
+}
+
+/* Work Styling */
+
 #work{
     display: flex;
-
-  margin-bottom: 50px;
-  margin-top: 8%;
-margin-left: 5%;
-margin-right: 10%;
-
-}
-
-#contact-me{
-    display: flex;
-    margin-bottom: 50px;
-    margin-top: 8%;
-  margin-left: 5%;
-  margin-right: 10%;
-  
-}
-
-.contact-info{
-    display: flex;
-    border-left: 5px solid darkblue;
-    width: 100%;
-    
-}
-
-.contact-info address{
-    
-    display: flex;
-    justify-content: space-between;
-    line-height: 3.5;
-    font-size: 32px;
-    flex: 1 100%;
-    padding: 10px;
-    font-style: normal;
-    text-decoration: none;
-
-}
-
-.contact-info a{
-    display: flex;
-    justify-content: space-between;
-}
-
-.contact-me{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     margin-bottom: 50px;
     margin-top: 8%;
     margin-left: 5%;
     margin-right: 10%;
 }
 
-
-
-
-.contact-me a{
-    text-decoration: none;
-}
-
-.title{
-    display: flex;
-    flex-direction: row;
-}
-
-
-
-
-.avatar{
-    display: flex;
-flex: 0 25%;
-max-width: 20%;
-height: 10%;
-padding: 10px;
-border-left: 5px solid darkblue;
-}
-    
+/* Flexbox Styling */
 
 .flexcontainer div{  
     display: flex;
@@ -170,16 +125,55 @@ border-left: 5px solid darkblue;
     background-image: url(./images/download.png);
 }
 
-.section-head{
-    font-size: 45px;
+/* Contact Styling */
+
+#contact-me{
+    display: flex;
+    margin-bottom: 50px;
+    margin-top: 8%;
+    margin-left: 5%;
+    margin-right: 10%;  
+}
+
+.contact-info{
+    display: flex;
+    border-left: 5px solid darkblue;
+    width: 100%;    
+}
+
+.contact-info address{    
+    display: flex;
+    justify-content: space-between;
+    line-height: 3.5;
+    font-size: 32px;
     flex: 1 100%;
-    padding: 20px;
-    text-align: center;
-    max-width: 200px;
-    }
+    padding: 10px;
+    font-style: normal;
+    text-decoration: none;
+}
 
+.contact-info a{
+    display: flex;
+    justify-content: space-between;
+}
 
-    @media screen and (max-width: 768px) {  
+.contact-me{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+    margin-top: 8%;
+    margin-left: 5%;
+    margin-right: 10%;
+}
+
+.contact-me a{
+    text-decoration: none;
+}
+
+/* Media Queries */
+
+ @media screen and (max-width: 768px) {  
         .header {
             width: 100%;
         }
@@ -224,8 +218,8 @@ border-left: 5px solid darkblue;
         }
     }
     
-    /* MEDIA QUERIES FOR MOBILE PHONES AND SMALLER*/
-    @media screen and (max-width: 575px) {
+ 
+@media screen and (max-width: 575px) {
         .contact-info address {
             font-size: 24px;
             flex-direction: column;
