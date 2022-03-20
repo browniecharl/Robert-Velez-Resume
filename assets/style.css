@@ -1,15 +1,19 @@
 *{
-    color: lightgray;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
+    background-color: darkgray;
     font-family: Arial, Helvetica, sans-serif;
-    background-image: url(./images/photo-1585314062604-1a357de8b000.jpeg);
-    margin: 0;
+   
 }
+ 
 
 header {
-    background-image: url("./images/1079961.jpeg");
+    background-image: url("./images/abstract-dark-black-and-grey-modern-material-header-technology-banner-abstract-widescreen-background-vector.jpeg");
+    padding: 10px 15px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -20,6 +24,7 @@ header {
 
 header h1 {
     font-size: 50px;
+    color: lightgray;
 }
 
 header nav {
@@ -41,48 +46,118 @@ header nav ul li a {
     
 }
 
-.section-title{
-    font-size: x-large;
-    margin-left: 12%;
-    margin-top: 6%;  
-    text-decoration: overline underline; 
-    text-align: left;
+#about-me{
+    display: flex;
+justify-content: space-between;
+align-items: center;
+margin-bottom: 50px;
+margin-top: 8%;
+margin-left: 5%;
+margin-right: 10%;
 }
 
-.flexbox div{
-    width: 200px; height: 200px; margin: 5px;
+#about-me p{
+    flex: 1 100%;
+    flex-wrap: wrap;
+    padding: 10px;
+    text-align: center;
+    font-size: 24px;
+    line-height: 1.5;
 }
 
-.flexbox{
-    margin-left: 10%;
+#work{
+    display: flex;
+
+  margin-bottom: 50px;
+  margin-top: 8%;
+margin-left: 5%;
+margin-right: 10%;
+
+}
+
+#contact-me{
+    display: flex;
+    margin-bottom: 50px;
+    margin-top: 8%;
+  margin-left: 5%;
+  margin-right: 10%;
+  
+}
+
+.contact-info{
+    display: flex;
+    border-left: 5px solid darkblue;
+    width: 100%;
+    
+}
+
+.contact-info address{
+    
+    display: flex;
+    justify-content: space-between;
+    line-height: 3.5;
+    font-size: 32px;
+    flex: 1 100%;
+    padding: 10px;
+    font-style: normal;
+    text-decoration: none;
+
+}
+
+.contact-info a{
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-me{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+    margin-top: 8%;
+    margin-left: 5%;
+    margin-right: 10%;
+}
+
+
+
+
+.contact-me a{
+    text-decoration: none;
+}
+
+.title{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
 }
 
-#picture{
-    flex: 1 0 80%;
-   
+
+
+
+.avatar{
+    display: flex;
+flex: 0 25%;
+max-width: 20%;
+height: 10%;
+padding: 10px;
+border-left: 5px solid darkblue;
+}
+    
+
+.flexcontainer div{  
+    display: flex;
+    width: 400px; height: 200px; margin: 5px;
+    border: 4px solid darkblue;
 }
 
-#paragraph{
-    flex: 1 0 5%;
-    background-image: url("./images/auavatar.png");
-    background-size: contain;
-}
-
-.flexcontainer div{
-    width: 200px; height: 200px; margin: 5px;
-    border: 4px solid darkgray;
-}
-
-.flexcontainer{
-    margin-left: 22%;
-    margin-right: 20%;
+.flexcontainer{   
+    color: white;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+    width: 100%;
+    border-left: 5px solid darkblue;
 }
 
 #run-buddy{
@@ -95,18 +170,72 @@ header nav ul li a {
     background-image: url(./images/download.png);
 }
 
-.flexcontact div{
-    width: 200px; height: 200px; margin: 5px;
-    border: 4px solid darkgray;
-}
+.section-head{
+    font-size: 45px;
+    flex: 1 100%;
+    padding: 20px;
+    text-align: center;
+    max-width: 200px;
+    }
 
-.flexcontact{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-between;
-}
 
-footer{
-    margin-top: 30%;
-}
+    @media screen and (max-width: 768px) {  
+        .header {
+            width: 100%;
+        }
+       .title{
+            flex-wrap: wrap;
+            flex-direction: column;
+            justify-content: center;
+            width: 100%;
+        }
+        .section-head{
+            display: flex;
+            justify-content: center;
+            align-items: center; 
+            max-width: none;
+        }        
+        header nav ul li a{
+            font-size: 20px;
+        }       
+        .contact-info{
+            border-left: none;
+            flex-wrap: wrap;
+            text-align: center;
+        }
+        .flexcontainer{
+            border-left: none;
+        }
+        .avatar{
+            border-left: none;
+            max-width: 50%;
+        }
+        .number {
+            font-size: 20px;
+        }
+        .email {
+            font-size: 20px;
+        }
+        .github {
+            font-size: 20px;
+        }
+        .spotify{
+            font-size: 20px;
+        }
+    }
+    
+    /* MEDIA QUERIES FOR MOBILE PHONES AND SMALLER*/
+    @media screen and (max-width: 575px) {
+        .contact-info address {
+            font-size: 24px;
+            flex-direction: column;
+            text-align: center;
+        }
+        header nav ul li a {
+            font-size: 20px;
+            justify-content: space-between;
+            padding: 5px;
+        }
+    }
+
+
