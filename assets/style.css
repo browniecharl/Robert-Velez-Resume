@@ -120,6 +120,12 @@ header nav ul li a{
     flex: 1 0 calc(100% - 30px);
 }
 
+#musicDashboard{
+    background-image: url("./images/artist-rec-ss.png");
+    background-size: cover;
+    color: black;
+}
+
 #placeholder-1, #placeholder-2{
     flex: 1 0 auto;
     background-image: url(./images/download.png);
