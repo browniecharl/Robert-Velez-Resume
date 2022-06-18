@@ -126,6 +126,12 @@ header nav ul li a{
     color: black;
 }
 
+#justMusicReviews{
+    background-image: url(./Screen\ Shot\ 2022-06-18\ at\ 9.53.04\ AM.png);
+    background-size: cover;
+}
+
+
 #placeholder-1, #placeholder-2{
     flex: 1 0 auto;
     background-image: url(./images/download.png);
